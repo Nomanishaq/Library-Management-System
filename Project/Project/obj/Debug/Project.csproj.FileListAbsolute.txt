@@ -1,0 +1,17 @@
+C:\Users\nk250\Desktop\Project\Project\Project\bin\Debug\Project.exe
+C:\Users\nk250\Desktop\Project\Project\Project\bin\Debug\Project.pdb
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.Form1.resources
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.exe
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.pdb
+C:\Users\nk250\Desktop\Project\Project\Project\bin\Debug\Project.exe.config
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.Form2.resources
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.Home.resources
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.Add_Memers.resources
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.catalog.resources
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.Issue.resources
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.Return.resources
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.Report.resources
+C:\Users\nk250\Desktop\Project\Project\Project\obj\Debug\Project.Add_book.resources

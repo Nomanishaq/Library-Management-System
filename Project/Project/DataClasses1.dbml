@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="project" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=project;User ID=sa" SettingsObjectName="Project.Properties.Settings" SettingsPropertyName="projectConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Loggin" Member="Loggins">
+    <Type Name="Loggin">
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pasword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bookadd" Member="bookadds">
+    <Type Name="bookadd">
+      <Column Name="Book_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ISBN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Auther" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Member_add" Member="Member_adds">
+    <Type Name="Member_add">
+      <Column Name="Member_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="F_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cnic" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Adress" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bookadd" Member="bookadd1s">
+    <Type Name="bookadd1">
+      <Column Name="List" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Book_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="category" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ISBN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Auther" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.issubook" Member="issubooks">
+    <Type Name="issubook">
+      <Column Name="Book_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Member_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Issuedate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Ruturn_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Return_Days" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_category" Member="tbl_categories">
+    <Type Name="tbl_category">
+      <Column Name="cat_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cat_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.ad" Method="ad">
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="F_Name" Parameter="f_Name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Cnic" Parameter="cnic" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Adress" Parameter="adress" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Gender" Parameter="gender" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.select_member" Method="select_member">
+    <ElementType Name="select_memberResult">
+      <Column Name="Member_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="F_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cnic" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Adress" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ad_member" Method="ad_member">
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="F_Name" Parameter="f_Name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Cnic" Parameter="cnic" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Adress" Parameter="adress" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Gender" Parameter="gender" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.bokad" Method="bokad">
+    <Parameter Name="Book_Name" Parameter="book_Name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="category" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IBSN" Parameter="iBSN" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Auther" Parameter="auther" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.bookshow" Method="bookshow">
+    <ElementType Name="bookshowResult">
+      <Column Name="List" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Book_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="category" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ISBN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Auther" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.isubook" Method="isubook">
+    <Parameter Name="Book_Name" Parameter="book_Name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Member_Name" Parameter="member_Name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Issuedate" Parameter="issuedate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Ruturn_Date" Parameter="ruturn_Date" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Return_Days" Parameter="return_Days" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.isubookdetail" Method="isubookdetail">
+    <ElementType Name="isubookdetailResult">
+      <Column Name="Book_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Member_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Issuedate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Ruturn_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Return_Days" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.deleteBok" Method="deleteBok">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
